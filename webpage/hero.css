@@ -1,5 +1,6 @@
 .hero {
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 justify-content: space-between;
 padding: 80px 144px;
@@ -46,4 +47,54 @@ background-color: #43A046;
 
 .hero-image img {
 width: 300px;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 260px;
+  }
 }

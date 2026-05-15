@@ -33,55 +33,30 @@ opacity: 1;
 }
 
 
-.features {
-padding: 80px 144px;
-background-color: #f5f5f5;
-text-align: center;
+@media (max-width: 1024px) {
+  .clients {
+    padding: 50px 40px;
+  }
+
+  .clients-logos {
+    gap: 30px;
+  }
 }
 
-.features-title {
-font-size: 32px;
-font-weight: 700;
-color: #263238;
-margin-bottom: 8px;
+@media (max-width: 768px) {
+  .clients {
+    padding: 40px 20px;
+  }
+
+  .clients-title {
+    font-size: 22px;
+  }
+
+  .clients-logos img {
+    width: 40px;
+  }
 }
 
-.features-subtitle {
-font-size: 14px;
-color: #717171;
-margin-bottom: 48px;
-}
-
-.features-grid {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-column-gap: 32px;
-}
-
-.feature-card {
-background-color: #ffffff;
-padding: 40px 32px;
-border-radius: 8px;
-text-align: center;
-}
-
-.feature-card img {
-width: 56px;
-margin-bottom: 20px;
-}
-
-.feature-card h3 {
-font-size: 16px;
-font-weight: 700;
-color: #263238;
-margin-bottom: 12px;
-}
-
-.feature-card p {
-font-size: 13px;
-color: #717171;
-line-height: 22px;
-}
 
 
 .features {
@@ -133,6 +108,35 @@ font-size: 13px;
 color: #717171;
 line-height: 22px;
 }
+
+@media (max-width: 1024px) {
+  .features {
+    padding: 60px 40px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 40px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .features-title {
+    font-size: 26px;
+  }
+}
+
+
+
 
 .info {
 display: flex;
@@ -350,4 +354,114 @@ text-decoration: none;
  
 .blog-read:hover {
 text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+  .info,
+  .info-2 {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .info-image img,
+  .info-2-image img {
+    width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info,
+  .info-2 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .info-image img,
+  .info-2-image img {
+    width: 200px;
+  }
+
+  .info-text h2,
+  .info-2-text h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .info-text p,
+  .info-2-text p {
+    font-size: 13px;
+  }
+
+  .info-btn,
+  .info-2-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .info-3 {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .tesla-img img {
+    width: 260px;
+  }
+
+  .blog {
+    padding: 60px 40px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .blog-info {
+    margin-left: 20px;
+    width: 85%;
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .info-3 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .tesla-img img {
+    width: 220px;
+  }
+
+  .text-box {
+    align-items: center;
+  }
+
+  .blog {
+    padding: 40px 20px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .blog-subtitle {
+    max-width: 100%;
+  }
+
+  .blog-info {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 12px;
+    margin-top: -20px;
+  }
 }
